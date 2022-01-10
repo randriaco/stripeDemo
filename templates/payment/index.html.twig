@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Paiement{% endblock %}
+
+{% block body %}
+ <div class="container">
+    <h1>Payement</h1>
+
+    <p>T-Shirt</p>
+
+    <p>Quantité : 1</p>
+
+    <p>Prix : 20 euros</p>
+
+    <form action="/checkout" method="POST">
+        <button type="submit" class="btn btn-primary ">Acheter</button>
+    </form>
+ 
+ </div>
+{% endblock %}
